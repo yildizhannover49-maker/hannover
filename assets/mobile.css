@@ -1,0 +1,130 @@
+/* ===========================================================
+   YILDIZ – Mobile-Verbesserungsschicht (nur Ergänzung)
+   Greift den kompilierten Seiten-Code nicht an; überschreibt
+   nur per Media-Query + eigenem Header/Menü (via mobile.js).
+   =========================================================== */
+
+/* Eigene Mobile-Bar/Menü auf Desktop komplett aus */
+#yzm-bar, #yzm-menu, #yzm-scrim { display: none; }
+
+/* ---- Hero-Logo (Text-SVG + Fleisch-SVG NEBENEINANDER) – auf ALLEN Größen ---- */
+.yzm-heroflow {
+  display: flex; align-items: center; justify-content: flex-start; gap: 14px;
+  width: 100%; margin: 2px 0 22px;
+}
+.yzm-heroflow img {
+  width: auto; height: 66px; display: block; /* Höhe wird per JS an die Breite angepasst */
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,.55));
+}
+
+@media (max-width: 820px) {
+  /* Original-Header (Statuszeile + Nav-Reihe) auf dem Handy ausblenden */
+  body > #dc-root header,
+  #dc-root > * header,
+  header { display: none !important; }
+
+  /* Platz für unsere fixe Bar schaffen (Seiteninhalt nach unten) */
+  #dc-root { padding-top: 76px; }
+
+  /* ---- Fixe Mobile-Bar ---- */
+  #yzm-bar {
+    display: flex; align-items: center; justify-content: space-between;
+    position: fixed; top: 0; left: 0; right: 0; height: 76px; z-index: 9998;
+    padding: 0 14px; box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(11,8,6,.98), rgba(11,8,6,.9));
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  /* Logo aus der Bar entfernt – erscheint im Hero (.yzm-heroflow) */
+  #yzm-bar .yzm-right { display: flex; align-items: center; gap: 8px; }
+
+  #yzm-bar a.yzm-tel, #yzm-bar button.yzm-burger {
+    display: flex; align-items: center; justify-content: center;
+    height: 44px; min-width: 44px; border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.05);
+    color: #fbf5ec; text-decoration: none; cursor: pointer; padding: 0 10px;
+    font-size: 18px;
+  }
+  #yzm-bar .yzm-burger span {
+    display: block; width: 22px; height: 2px; background: #fbf5ec; border-radius: 2px;
+    position: relative;
+  }
+  #yzm-bar .yzm-burger span::before,
+  #yzm-bar .yzm-burger span::after {
+    content: ""; position: absolute; left: 0; width: 22px; height: 2px;
+    background: #fbf5ec; border-radius: 2px;
+  }
+  #yzm-bar .yzm-burger span::before { top: -7px; }
+  #yzm-bar .yzm-burger span::after { top: 7px; }
+
+  /* ---- Sprach-Dropdown in der Bar ---- */
+  #yzm-bar .yzm-langdd { position: relative; }
+  #yzm-bar .yzm-langbtn {
+    display: flex; align-items: center; gap: 6px; height: 44px; padding: 0 12px;
+    border-radius: 10px; border: 1px solid rgba(255,255,255,.14);
+    background: rgba(255,255,255,.05); color: #fbf5ec; cursor: pointer;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 700;
+    font-size: 15px; letter-spacing: .06em;
+  }
+  #yzm-bar .yzm-langbtn .chev { font-size: 10px; opacity: .8; transition: transform .2s; }
+  #yzm-bar .yzm-langdd.open .yzm-langbtn { border-color: #d61f2a; background: rgba(214,31,42,.12); }
+  #yzm-bar .yzm-langdd.open .yzm-langbtn .chev { transform: rotate(180deg); }
+  #yzm-bar .yzm-langlist {
+    display: none; position: absolute; top: 52px; right: 0; min-width: 132px; z-index: 9999;
+    background: #140d0a; border: 1px solid rgba(232,64,31,.35); border-radius: 12px;
+    padding: 6px; box-shadow: 0 12px 34px rgba(0,0,0,.55); overflow: hidden;
+  }
+  #yzm-bar .yzm-langdd.open .yzm-langlist { display: block; }
+  #yzm-bar .yzm-langlist button {
+    display: flex; align-items: center; justify-content: space-between; width: 100%;
+    padding: 11px 12px; border: 0; border-radius: 8px; cursor: pointer;
+    background: transparent; color: #fbf5ec;
+    font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 16px; letter-spacing: .05em;
+  }
+  #yzm-bar .yzm-langlist button:hover { background: rgba(255,255,255,.06); }
+  #yzm-bar .yzm-langlist button.active { color: #ff6a3d; }
+  #yzm-bar .yzm-langlist button.active::after { content: "✓"; color: #d61f2a; font-size: 14px; }
+
+  /* ---- Verdunkelung ---- */
+  #yzm-scrim {
+    display: none; position: fixed; inset: 0; z-index: 9997;
+    background: rgba(0,0,0,.55); opacity: 0; transition: opacity .25s ease;
+  }
+  /* ---- Slide-in-Menü ---- */
+  #yzm-menu {
+    display: flex; flex-direction: column;
+    position: fixed; top: 0; right: 0; bottom: 0; z-index: 9999;
+    width: min(84vw, 340px); box-sizing: border-box; padding: 18px 20px 26px;
+    background: linear-gradient(180deg, #140d0a, #0b0806);
+    border-left: 1px solid rgba(232,64,31,.35);
+    transform: translateX(105%); transition: transform .28s cubic-bezier(.4,0,.2,1);
+    overflow-y: auto; font-family: "Barlow Condensed", sans-serif;
+  }
+  html.yzm-open #yzm-scrim { display: block; opacity: 1; }
+  html.yzm-open #yzm-menu { transform: translateX(0); }
+  html.yzm-open { overflow: hidden; }
+
+  #yzm-menu .yzm-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  #yzm-menu .yzm-head img { height: 66px; }
+  #yzm-menu .yzm-close {
+    width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.14); color: #fbf5ec; font-size: 22px; line-height: 1;
+    cursor: pointer;
+  }
+  #yzm-menu .yzm-hours { color: #c9a24b; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; margin: 6px 2px 14px; }
+
+  #yzm-menu nav.yzm-nav { display: flex; flex-direction: column; }
+  #yzm-menu nav.yzm-nav a {
+    color: #fbf5ec; text-decoration: none; font-weight: 700; font-size: 22px;
+    letter-spacing: .04em; text-transform: uppercase; padding: 14px 4px;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  #yzm-menu nav.yzm-nav a:active { color: #e8401f; }
+
+  #yzm-menu a.yzm-order {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-top: auto; padding: 15px; border-radius: 12px;
+    background: #d61f2a; color: #fff; text-decoration: none;
+    font-weight: 800; letter-spacing: .04em; text-transform: uppercase; font-size: 17px;
+  }
+}

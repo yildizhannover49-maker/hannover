@@ -3,6 +3,7 @@
 <script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/react.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/react-dom.js"};</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/mobile.css">
 <script src="assets/app.js"></script>
 </head>
 <body>
@@ -29,7 +30,7 @@
 <meta name="twitter:title" content="YILDIZ – Haus des Fleisches &amp; Grills | Hannover">
 <meta name="twitter:description" content="Frisches Fleisch aus eigener Theke – mitnehmen, grillen lassen oder aus der Karte wählen.">
 <meta name="twitter:image" content="assets/yildiz-logo.png">
-<link rel="icon" type="image/png" href="assets/yildiz-logo.png">
+<link rel="icon" type="image/svg+xml" href="assets/yildiz-logo.svg">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Restaurant",
@@ -336,7 +337,7 @@ a:hover{color:#f0511f}
     </span>
   </div>
   <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:10px 22px;flex-wrap:wrap">
-    <a href="#top" style="display:flex;align-items:center"><img src="assets/yildiz-logo.png" alt="YILDIZ" style="height:56px;width:auto;display:block"></a>
+    <a href="#top" style="display:flex;align-items:center"><img src="assets/yildiz-logo.svg" alt="YILDIZ" style="height:56px;width:auto;display:block"></a>
     <nav style="display:flex;align-items:center;gap:26px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:17px;letter-spacing:.05em;text-transform:uppercase;flex-wrap:wrap">
       <a href="#konsept" style="color:#efe6da">{{ t.navConcepts }}</a>
       <a href="#izgara" style="color:#efe6da">{{ t.navGrill }}</a>
@@ -563,7 +564,7 @@ a:hover{color:#f0511f}
 
 <footer style="background:#070504;border-top:1px solid rgba(201,162,75,.2);padding:48px 22px 34px">
   <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
-    <img src="assets/yildiz-logo.png" alt="YILDIZ" style="height:70px;width:auto">
+    <img src="assets/yildiz-logo.svg" alt="YILDIZ" style="height:70px;width:auto">
     <nav style="display:flex;gap:24px;flex-wrap:wrap;font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.05em">
       <a href="#konsept" style="color:#c9bfb2">{{ t.navConcepts }}</a>
       <a href="#izgara" style="color:#c9bfb2">{{ t.navGrill }}</a>
@@ -836,4 +837,5 @@ class Component extends DCLogic {
 </script>
 
 
+<script src="assets/mobile.js" defer></script>
 </body></html>
