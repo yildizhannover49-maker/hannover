@@ -35,8 +35,10 @@
     -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255,255,255,.08);
   }
-  /* Logo aus der Bar entfernt – erscheint im Hero (.yzm-heroflow) */
-  #yzm-bar .yzm-right { display: flex; align-items: center; gap: 8px; }
+  /* Logo links in der Bar */
+  #yzm-bar .yzm-brand { display: flex; align-items: center; height: 100%; min-width: 0; text-decoration: none; }
+  #yzm-bar .yzm-brand img { height: 46px; width: auto; max-width: 58vw; display: block; }
+  #yzm-bar .yzm-right { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 
   #yzm-bar a.yzm-tel, #yzm-bar button.yzm-burger {
     display: flex; align-items: center; justify-content: center;

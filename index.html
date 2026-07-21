@@ -337,7 +337,7 @@ a:hover{color:#f0511f}
     </span>
   </div>
   <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:10px 22px;flex-wrap:wrap">
-    <a href="#top" style="display:flex;align-items:center"><img src="assets/yildiz-logo.svg" alt="YILDIZ" style="height:56px;width:auto;display:block"></a>
+    <a href="#top" style="display:flex;align-items:center"><img src="assets/yildiz-text.svg" alt="YILDIZ – Haus des Fleisches & Grills" style="height:64px;width:auto;display:block"></a>
     <nav style="display:flex;align-items:center;gap:26px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:17px;letter-spacing:.05em;text-transform:uppercase;flex-wrap:wrap">
       <a href="#konsept" style="color:#efe6da">{{ t.navConcepts }}</a>
       <a href="#izgara" style="color:#efe6da">{{ t.navGrill }}</a>
@@ -395,7 +395,7 @@ a:hover{color:#f0511f}
       <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.conceptKicker }}</div>
       <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);text-transform:uppercase;margin:10px 0 0;color:#fbf5ec;line-height:1">{{ t.conceptH2a }} <span style="color:#f0511f">{{ t.conceptH2b }}</span></h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:22px">
 
       <div style="position:relative;background:linear-gradient(180deg,#171009,#100b07);border:1px solid rgba(201,162,75,.2);border-top:3px solid #d61f2a;border-radius:12px;padding:38px 30px;overflow:hidden">
         <div style="position:absolute;top:18px;right:24px;font-family:'Anton',sans-serif;font-size:4rem;color:rgba(240,81,31,.12);line-height:1">01</div>
@@ -481,7 +481,7 @@ a:hover{color:#f0511f}
 </section>
 
 <section id="fleischtheke" style="position:relative;padding:0;background:#0b0806;scroll-margin-top:110px">
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));align-items:stretch">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));align-items:stretch">
     <div style="position:relative;min-height:440px"><image-slot id="yz-theke" shape="rect" placeholder="Kasap tezgâhı / Fleischtheke fotoğrafı"></image-slot></div>
     <div style="padding:72px 48px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,#160f0a,#0d0907)">
       <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.thekeKicker }}</div>
@@ -508,7 +508,7 @@ a:hover{color:#f0511f}
       </sc-for>
     </div>
     <div style="background:linear-gradient(180deg,#170f0a,#100b07);border:1px solid rgba(201,162,75,.18);border-radius:14px;padding:14px 30px">
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2px 46px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:2px 46px">
         <sc-for list="{{ items }}" as="it" hint-placeholder-count="10">
           <div style="display:flex;align-items:baseline;gap:12px;padding:15px 0;border-bottom:1px dashed rgba(255,255,255,.08)">
             <div style="flex:1;min-width:0">
@@ -528,7 +528,7 @@ a:hover{color:#f0511f}
 </section>
 
 <section id="iletisim" style="position:relative;padding:96px 22px;background:#0b0806;border-top:1px solid rgba(255,255,255,.05);scroll-margin-top:110px">
-  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:40px;align-items:center">
     <div>
       <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.contactKicker }}</div>
       <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;margin:10px 0 26px;color:#fbf5ec;line-height:1">{{ t.contactH2a }} <span style="color:#f0511f">{{ t.contactH2b }}</span></h2>

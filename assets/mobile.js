@@ -31,9 +31,10 @@
   function build() {
     if (document.getElementById("yzm-bar")) return;
 
-    // ---- Fixe Bar (ohne Logo – Logo sitzt zentriert im Hero) ----
+    // ---- Fixe Bar (Logo links, Controls rechts) ----
     var bar = el("div", { id: "yzm-bar" });
-    var spacer = el("span", { class: "yzm-spacer" }); // hält die Controls rechts
+    var brand = el("a", { class: "yzm-brand", href: "#top", "aria-label": "YILDIZ – Haus des Fleisches & Grills" });
+    brand.appendChild(el("img", { src: "assets/yildiz-text.svg", alt: "YILDIZ – Haus des Fleisches & Grills" }));
 
     var right = el("div", { class: "yzm-right" });
 
@@ -64,7 +65,7 @@
     burger.appendChild(el("span"));
 
     right.appendChild(dd); right.appendChild(tel); right.appendChild(burger);
-    bar.appendChild(spacer); bar.appendChild(right);
+    bar.appendChild(brand); bar.appendChild(right);
 
     // ---- Scrim + Menü ----
     var scrim = el("div", { id: "yzm-scrim" });
@@ -92,19 +93,6 @@
     document.body.appendChild(bar);
     document.body.appendChild(scrim);
     document.body.appendChild(menu);
-
-    // Logo in den Hero-Textfluss einfügen (oben) – schiebt Text nach unten
-    ensureFlowLogo();
-    window.addEventListener("resize", ensureFlowLogo);
-    [200, 600, 1200, 2000, 3500].forEach(function (t) { setTimeout(ensureFlowLogo, t); });
-    // Nach React-Re-Renders (z. B. Sprachwechsel) Logo wieder einfügen
-    var root = document.getElementById("dc-root");
-    if (root && "MutationObserver" in window) {
-      var mo = new MutationObserver(function () {
-        clearTimeout(mo._t); mo._t = setTimeout(ensureFlowLogo, 60);
-      });
-      mo.observe(root, { childList: true, subtree: true });
-    }
 
     burger.addEventListener("click", openMenu);
     close.addEventListener("click", closeMenu);
