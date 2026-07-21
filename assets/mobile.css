@@ -30,6 +30,11 @@
      die 76px-Bar-Freiraum wird bereits über #dc-root abgedeckt) */
   .yz-hero { padding-top: 40px !important; align-items: flex-start !important; }
 
+  /* Hero-Statistiken: alle drei nebeneinander auf dem Handy (kleiner) */
+  .yz-stats { gap: 12px !important; padding: 13px 14px !important; flex-wrap: nowrap !important; width: 100%; box-sizing: border-box; }
+  .yz-stats > div > div:first-child { font-size: 1.4rem !important; }        /* Zahlen */
+  .yz-stats > div > div + div { font-size: 9.5px !important; letter-spacing: .04em !important; white-space: nowrap; }  /* Labels */
+
   /* ---- Fixe Mobile-Bar ---- */
   #yzm-bar {
     display: flex; align-items: center; justify-content: space-between;
