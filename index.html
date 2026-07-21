@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html><head>
+<script>window.__resources = {"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"assets/react.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"assets/react-dom.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/app.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>YILDIZ – Haus des Fleisches &amp; Grills | Metzgerei &amp; Grill Restaurant Hannover</title>
+<meta name="description" content="YILDIZ Haus des Fleisches &amp; Grills in Hannover: frisches Fleisch aus eigener Theke. Fleisch roh mitnehmen, von uns grillen lassen oder aus der Karte wählen – Döner, Adana, Kuzu Şiş, Pide, Pizza. Mo–Sa 10–24 Uhr.">
+<meta name="keywords" content="Metzgerei Hannover, Fleischerei Hannover, Grill Restaurant Hannover, Döner Hannover, Kebap Hannover, türkisches Restaurant Hannover, Fleischtheke, Adana Kebap, Kuzu Şiş, Pide, YILDIZ Hannover, Kurt-Schumacher-Straße">
+<meta name="robots" content="index, follow">
+<meta name="author" content="YILDIZ – Haus des Fleisches &amp; Grills">
+<meta name="geo.region" content="DE-NI">
+<meta name="geo.placename" content="Hannover">
+<link rel="canonical" href="https://yildiz-hannover.de/">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:site_name" content="YILDIZ – Haus des Fleisches &amp; Grills">
+<meta property="og:title" content="YILDIZ – Haus des Fleisches &amp; Grills | Hannover">
+<meta property="og:description" content="Frisches Fleisch aus eigener Theke – mitnehmen, grillen lassen oder aus der Karte wählen. Metzgerei &amp; Grill in Hannover.">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:image" content="assets/yildiz-logo.png">
+<meta property="og:url" content="https://yildiz-hannover.de/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="YILDIZ – Haus des Fleisches &amp; Grills | Hannover">
+<meta name="twitter:description" content="Frisches Fleisch aus eigener Theke – mitnehmen, grillen lassen oder aus der Karte wählen.">
+<meta name="twitter:image" content="assets/yildiz-logo.png">
+<link rel="icon" type="image/png" href="assets/yildiz-logo.png">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "YILDIZ – Haus des Fleisches & Grills",
+  "image": "https://yildiz-hannover.de/assets/yildiz-logo.png",
+  "url": "https://yildiz-hannover.de/",
+  "telephone": "+49 176 62449413",
+  "priceRange": "€€",
+  "servesCuisine": ["Turkish", "Grill", "Kebab", "Steakhouse", "Butcher"],
+  "acceptsReservations": "True",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kurt-Schumacher-Straße 33",
+    "postalCode": "30159",
+    "addressLocality": "Hannover",
+    "addressRegion": "Niedersachsen",
+    "addressCountry": "DE"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 52.3799, "longitude": 9.7302 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "10:00",
+    "closes": "00:00"
+  }],
+  "sameAs": ["https://instagram.com/yildizhausdesfleisches_grills"],
+  "hasMenu": "https://yildiz-hannover.de/#menu"
+}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f01.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f02.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f03.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f04.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/f06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f07.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f08.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f09.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f10.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f11.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f12.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f13.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f14.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f15.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/f16.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/f17.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/f18.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f19.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f20.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/f21.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f22.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f23.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/f24.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f25.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f26.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/f27.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script src="assets/main.js"></script>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b0806;color:#f3ece3;font-family:'Barlow',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#d9b154;text-decoration:none}
+a:hover{color:#f0511f}
+::selection{background:#d61f2a;color:#fff}
+@keyframes yz-flicker{0%,100%{transform:translateY(0) scaleY(1) scaleX(1)}20%{transform:translateY(-10px) scaleY(1.18) scaleX(.9)}40%{transform:translateY(-4px) scaleY(.92) scaleX(1.08)}60%{transform:translateY(-15px) scaleY(1.26) scaleX(.86)}80%{transform:translateY(-6px) scaleY(1.03) scaleX(1.05)}}
+@keyframes yz-ember{0%{transform:translate(0,0) scale(1);opacity:0}8%{opacity:1}100%{transform:translate(var(--drift,20px),-320px) scale(.15);opacity:0}}
+@keyframes yz-glow{0%,100%{opacity:.5;transform:scaleY(1)}50%{opacity:.88;transform:scaleY(1.15)}}
+@keyframes yz-pulse{0%,100%{box-shadow:0 0 0 0 rgba(214,31,42,.55),0 10px 30px rgba(240,81,31,.35)}70%{box-shadow:0 0 0 16px rgba(214,31,42,0),0 10px 30px rgba(240,81,31,.35)}}
+@keyframes yz-fadeup{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+
+<div id="top" style="position:relative;background:#0b0806">
+
+<header style="position:fixed;top:0;left:0;right:0;z-index:50;background:linear-gradient(180deg,rgba(11,8,6,.96),rgba(11,8,6,.82));backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.22)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:6px 22px;font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.06em;color:#c9a24b;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.05);flex-wrap:wrap">
+    <span style="display:flex;align-items:center;gap:8px"><span style="color:#f0511f">●</span> Mo–Sa · 10:00 – 00:00</span>
+    <span style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+      <span style="display:flex;align-items:center;gap:5px">
+        <sc-for list="{{ langBtns }}" as="lb" hint-placeholder-count="3">
+          <button sc-camel-on-click="{{ lb.onClick }}" style="{{ lb.style }}">{{ lb.code }}</button>
+        </sc-for>
+      </span>
+      <a href="tel:+4917662449413" style="color:#e7ddd0">☏ 0176 62449413</a>
+      <span style="background:#d61f2a;color:#fff;padding:2px 10px;border-radius:3px;font-weight:700;letter-spacing:.03em">{{ t.discount }}</span>
+    </span>
+  </div>
+  <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:10px 22px;flex-wrap:wrap">
+    <a href="#top" style="display:flex;align-items:center"><img src="assets/yildiz-logo.png" alt="YILDIZ" style="height:56px;width:auto;display:block"></a>
+    <nav style="display:flex;align-items:center;gap:26px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:17px;letter-spacing:.05em;text-transform:uppercase;flex-wrap:wrap">
+      <a href="#konsept" style="color:#efe6da">{{ t.navConcepts }}</a>
+      <a href="#izgara" style="color:#efe6da">{{ t.navGrill }}</a>
+      <a href="#fleischtheke" style="color:#efe6da">{{ t.navCounter }}</a>
+      <a href="#menu" style="color:#efe6da">{{ t.navMenu }}</a>
+      <a href="#iletisim" style="color:#efe6da">{{ t.navContact }}</a>
+    </nav>
+    <a href="tel:+4917662449413" style="display:inline-flex;align-items:center;gap:9px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:6px;animation:yz-pulse 2.6s ease-out infinite">
+      <svg width="17" height="17" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18l-2 12H5L3 6Z"></path><path d="M3 6 2 3H0"></path><circle cx="9" cy="21" r="1"></circle><circle cx="18" cy="21" r="1"></circle></svg>
+      {{ t.order }}
+    </a>
+  </div>
+</header>
+
+<section style="position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:150px;scroll-margin-top:110px">
+  <div style="position:absolute;inset:0;z-index:0"><image-slot id="yz-hero" shape="rect" fit="cover" placeholder="Hero görseli bırak — mangalda ızgara / közde et"></image-slot></div>
+  <div style="position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(11,8,6,.94) 0%,rgba(11,8,6,.72) 42%,rgba(11,8,6,.35) 70%,rgba(11,8,6,.55) 100%)"></div>
+  <div style="position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(0deg,rgba(11,8,6,.98) 4%,rgba(11,8,6,.25) 34%,rgba(11,8,6,.15) 60%,rgba(11,8,6,.6) 100%)"></div>
+
+  <div style="position:relative;z-index:5;max-width:1280px;margin:0 auto;padding:0 22px;width:100%">
+    <div style="max-width:760px;animation:yz-fadeup .9s cubic-bezier(.2,.7,.2,1) both">
+      <div style="display:inline-flex;align-items:center;gap:10px;font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:#c9a24b;font-size:15px;margin-bottom:22px">
+        <span style="width:34px;height:2px;background:#d61f2a;display:inline-block"></span>
+        Hannover · Kurt-Schumacher-Str. 33
+      </div>
+      <h1 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.8rem,7.4vw,6.4rem);line-height:.92;letter-spacing:.5px;text-transform:uppercase;margin:0;color:#fbf5ec;text-shadow:0 6px 40px rgba(240,81,31,.28)">
+        {{ t.h1a }}<br><span style="color:#f0511f">{{ t.h1b }}</span>
+      </h1>
+      <p style="font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.05rem,2vw,1.55rem);color:#d9b154;font-weight:500;letter-spacing:.03em;margin:14px 0 0">Haus des Fleisches &amp; Grills · {{ t.slogan }}</p>
+      <p style="max-width:560px;font-size:clamp(1rem,1.5vw,1.18rem);line-height:1.55;color:#ccc0b2;margin:22px 0 0">{{ t.heroDesc }}</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:36px">
+        <a href="tel:+4917662449413" style="display:inline-flex;align-items:center;gap:10px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;letter-spacing:.08em;text-transform:uppercase;padding:16px 30px;border-radius:7px;box-shadow:0 12px 40px rgba(240,81,31,.4)">
+          <svg width="19" height="19" sc-camel-view-box="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18l-2 12H5L3 6Z"></path><circle cx="9" cy="21" r="1"></circle><circle cx="18" cy="21" r="1"></circle></svg>
+          {{ t.orderLong }}
+        </a>
+        <a href="#menu" style="display:inline-flex;align-items:center;gap:10px;background:transparent;color:#f3ece3;border:1.5px solid rgba(201,162,75,.6);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;letter-spacing:.08em;text-transform:uppercase;padding:15px 28px;border-radius:7px">{{ t.viewMenu }}</a>
+      </div>
+      <div style="display:flex;gap:30px;flex-wrap:wrap;margin-top:44px;font-family:'Barlow Condensed',sans-serif">
+        <div><div style="font-size:2rem;color:#f0511f;font-weight:700;line-height:1">90+</div><div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#a99e90">{{ t.statDishes }}</div></div>
+        <div style="width:1px;background:rgba(255,255,255,.12)"></div>
+        <div><div style="font-size:2rem;color:#f0511f;font-weight:700;line-height:1">100%</div><div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#a99e90">{{ t.statFresh }}</div></div>
+        <div style="width:1px;background:rgba(255,255,255,.12)"></div>
+        <div><div style="font-size:2rem;color:#f0511f;font-weight:700;line-height:1">14:00</div><div style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#a99e90">{{ t.statHours }}</div></div>
+      </div>
+    </div>
+  </div>
+
+  {{ fire }}
+  <div style="position:absolute;left:0;right:0;bottom:0;height:6px;z-index:4;background:linear-gradient(90deg,#7a0d0a,#f0511f,#ffcf6a,#f0511f,#7a0d0a);box-shadow:0 0 26px 6px rgba(240,81,31,.6);pointer-events:none"></div>
+</section>
+
+<section id="konsept" style="position:relative;padding:96px 22px;background:#0b0806;scroll-margin-top:110px">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:56px">
+      <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.conceptKicker }}</div>
+      <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);text-transform:uppercase;margin:10px 0 0;color:#fbf5ec;line-height:1">{{ t.conceptH2a }} <span style="color:#f0511f">{{ t.conceptH2b }}</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px">
+
+      <div style="position:relative;background:linear-gradient(180deg,#171009,#100b07);border:1px solid rgba(201,162,75,.2);border-top:3px solid #d61f2a;border-radius:12px;padding:38px 30px;overflow:hidden">
+        <div style="position:absolute;top:18px;right:24px;font-family:'Anton',sans-serif;font-size:4rem;color:rgba(240,81,31,.12);line-height:1">01</div>
+        <div style="width:60px;height:60px;border-radius:12px;background:rgba(214,31,42,.12);border:1px solid rgba(214,31,42,.4);display:flex;align-items:center;justify-content:center;margin-bottom:22px">
+          <svg width="30" height="30" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.7rem;letter-spacing:.03em;margin:0;color:#fbf5ec">{{ t.c1title }}</h3>
+        <div style="font-family:'Barlow Condensed',sans-serif;color:#c9a24b;font-size:1rem;letter-spacing:.04em;margin-top:2px">{{ t.c1sub }}</div>
+        <p style="color:#c2b6a8;line-height:1.6;margin:16px 0 0;font-size:1.02rem">{{ t.c1desc }}</p>
+        <a href="#fleischtheke" style="display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f0511f">{{ t.c1link }}</a>
+      </div>
+
+      <div style="position:relative;background:linear-gradient(180deg,#1d1108,#120b07);border:1px solid rgba(240,81,31,.4);border-top:3px solid #f0511f;border-radius:12px;padding:38px 30px;overflow:hidden;box-shadow:0 20px 60px rgba(240,81,31,.12)">
+        <div style="position:absolute;top:12px;right:20px;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0b0806;background:#c9a24b;padding:4px 10px;border-radius:4px">{{ t.c2badge }}</div>
+        <div style="position:absolute;top:44px;right:24px;font-family:'Anton',sans-serif;font-size:4rem;color:rgba(240,81,31,.14);line-height:1">02</div>
+        <div style="width:60px;height:60px;border-radius:12px;background:rgba(240,81,31,.16);border:1px solid rgba(240,81,31,.5);display:flex;align-items:center;justify-content:center;margin-bottom:22px">
+          <svg width="30" height="30" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5Z"></path></svg>
+        </div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.7rem;letter-spacing:.03em;margin:0;color:#fbf5ec">{{ t.c2title }}</h3>
+        <div style="font-family:'Barlow Condensed',sans-serif;color:#c9a24b;font-size:1rem;letter-spacing:.04em;margin-top:2px">{{ t.c2sub }}</div>
+        <p style="color:#c2b6a8;line-height:1.6;margin:16px 0 0;font-size:1.02rem">{{ t.c2desc }}</p>
+        <a href="tel:+4917662449413" style="display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f0511f">{{ t.c2link }}</a>
+      </div>
+
+      <div style="position:relative;background:linear-gradient(180deg,#171009,#100b07);border:1px solid rgba(201,162,75,.2);border-top:3px solid #c9a24b;border-radius:12px;padding:38px 30px;overflow:hidden">
+        <div style="position:absolute;top:18px;right:24px;font-family:'Anton',sans-serif;font-size:4rem;color:rgba(201,162,75,.12);line-height:1">03</div>
+        <div style="width:60px;height:60px;border-radius:12px;background:rgba(201,162,75,.12);border:1px solid rgba(201,162,75,.4);display:flex;align-items:center;justify-content:center;margin-bottom:22px">
+          <svg width="30" height="30" sc-camel-view-box="0 0 24 24" fill="none" stroke="#c9a24b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18"></path><path d="M12 11V3"></path><path d="M7 7c0-2 2-4 5-4s5 2 5 4"></path><path d="M4 11a8 8 0 0 0 16 0"></path><path d="M4 20h16"></path></svg>
+        </div>
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.7rem;letter-spacing:.03em;margin:0;color:#fbf5ec">{{ t.c3title }}</h3>
+        <div style="font-family:'Barlow Condensed',sans-serif;color:#c9a24b;font-size:1rem;letter-spacing:.04em;margin-top:2px">{{ t.c3sub }}</div>
+        <p style="color:#c2b6a8;line-height:1.6;margin:16px 0 0;font-size:1.02rem">{{ t.c3desc }}</p>
+        <a href="#menu" style="display:inline-flex;align-items:center;gap:7px;margin-top:22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#f0511f">{{ t.c3link }}</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="izgara" style="position:relative;padding:96px 22px;background:linear-gradient(180deg,#0d0907,#140d09);border-top:1px solid rgba(255,255,255,.05);scroll-margin-top:110px">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:48px">
+      <div>
+        <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.grillKicker }}</div>
+        <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);text-transform:uppercase;margin:10px 0 0;color:#fbf5ec;line-height:1">{{ t.grillH2a }} <span style="color:#f0511f">{{ t.grillH2b }}</span></h2>
+      </div>
+      <a href="#menu" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#c9a24b;border-bottom:1.5px solid rgba(201,162,75,.5);padding-bottom:3px">{{ t.fullMenu }}</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px">
+
+      <div style="background:#140d09;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="position:relative;height:200px"><image-slot id="yz-dish1" shape="rect" placeholder="Adana Kebap"></image-slot><span style="position:absolute;top:12px;right:12px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;padding:5px 12px;border-radius:6px;font-size:1.1rem">17€</span></div>
+        <div style="padding:18px 20px"><h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.35rem;margin:0;color:#fbf5ec">Adana Kebap <span style="color:#f0511f">🌶</span></h3><p style="color:#a99e90;margin:4px 0 0;font-size:.95rem">{{ t.dish1 }}</p></div>
+      </div>
+
+      <div style="background:#140d09;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="position:relative;height:200px"><image-slot id="yz-dish2" shape="rect" placeholder="Kuzu Şiş"></image-slot><span style="position:absolute;top:12px;right:12px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;padding:5px 12px;border-radius:6px;font-size:1.1rem">20€</span></div>
+        <div style="padding:18px 20px"><h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.35rem;margin:0;color:#fbf5ec">Kuzu Şiş</h3><p style="color:#a99e90;margin:4px 0 0;font-size:.95rem">{{ t.dish2 }}</p></div>
+      </div>
+
+      <div style="background:#140d09;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="position:relative;height:200px"><image-slot id="yz-dish3" shape="rect" placeholder="Yıldız Karışık Izgara"></image-slot><span style="position:absolute;top:12px;right:12px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;padding:5px 12px;border-radius:6px;font-size:1.1rem">25€</span></div>
+        <div style="padding:18px 20px"><h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.35rem;margin:0;color:#fbf5ec">Yıldız Karışık Izgara</h3><p style="color:#a99e90;margin:4px 0 0;font-size:.95rem">{{ t.dish3 }}</p></div>
+      </div>
+
+      <div style="background:#140d09;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="position:relative;height:200px"><image-slot id="yz-dish4" shape="rect" placeholder="Beyti Kebap"></image-slot><span style="position:absolute;top:12px;right:12px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;padding:5px 12px;border-radius:6px;font-size:1.1rem">20€</span></div>
+        <div style="padding:18px 20px"><h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.35rem;margin:0;color:#fbf5ec">Beyti Kebap</h3><p style="color:#a99e90;margin:4px 0 0;font-size:.95rem">{{ t.dish4 }}</p></div>
+      </div>
+
+      <div style="background:#140d09;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="position:relative;height:200px"><image-slot id="yz-dish5" shape="rect" placeholder="İskender"></image-slot><span style="position:absolute;top:12px;right:12px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;padding:5px 12px;border-radius:6px;font-size:1.1rem">17€</span></div>
+        <div style="padding:18px 20px"><h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.35rem;margin:0;color:#fbf5ec">İskender</h3><p style="color:#a99e90;margin:4px 0 0;font-size:.95rem">{{ t.dish5 }}</p></div>
+      </div>
+
+      <div style="background:#140d09;border:1px solid rgba(255,255,255,.07);border-radius:12px;overflow:hidden">
+        <div style="position:relative;height:200px"><image-slot id="yz-dish6" shape="rect" placeholder="Rinderfilet 250g"></image-slot><span style="position:absolute;top:12px;right:12px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;padding:5px 12px;border-radius:6px;font-size:1.1rem">30€</span></div>
+        <div style="padding:18px 20px"><h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:1.35rem;margin:0;color:#fbf5ec">Rinderfilet 250g</h3><p style="color:#a99e90;margin:4px 0 0;font-size:.95rem">{{ t.dish6 }}</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="fleischtheke" style="position:relative;padding:0;background:#0b0806;scroll-margin-top:110px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));align-items:stretch">
+    <div style="position:relative;min-height:440px"><image-slot id="yz-theke" shape="rect" placeholder="Kasap tezgâhı / Fleischtheke fotoğrafı"></image-slot></div>
+    <div style="padding:72px 48px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,#160f0a,#0d0907)">
+      <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.thekeKicker }}</div>
+      <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2rem,4vw,3.2rem);text-transform:uppercase;margin:10px 0 0;color:#fbf5ec;line-height:1">{{ t.thekeH2a }}<br><span style="color:#f0511f">{{ t.thekeH2b }}</span></h2>
+      <p style="color:#c2b6a8;line-height:1.65;margin:22px 0 0;font-size:1.08rem;max-width:520px">{{ t.thekeDesc }}</p>
+      <div style="font-style:italic;color:#8f857a;margin-top:14px;font-size:.98rem;border-left:2px solid rgba(201,162,75,.5);padding-left:14px">„Gerne können Sie Ihr Fleisch frisch an unserer Theke auswählen und im Rohzustand für zu Hause kaufen."</div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
+        <a href="tel:+4917662449413" style="display:inline-flex;align-items:center;gap:9px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;padding:14px 26px;border-radius:7px">☏ {{ t.thekeBtn1 }}</a>
+        <a href="#menu" style="display:inline-flex;align-items:center;gap:9px;color:#f3ece3;border:1.5px solid rgba(201,162,75,.5);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;padding:13px 24px;border-radius:7px">{{ t.thekeBtn2 }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" style="position:relative;padding:96px 22px;background:linear-gradient(180deg,#140d09,#0b0806);border-top:1px solid rgba(255,255,255,.05);scroll-margin-top:110px">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;margin-bottom:44px">
+      <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.menuKicker }}</div>
+      <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.8rem);text-transform:uppercase;margin:10px 0 0;color:#fbf5ec;line-height:1">{{ t.menuH2a }} <span style="color:#f0511f">{{ t.menuH2b }}</span></h2>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:38px">
+      <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="10">
+        <button sc-camel-on-click="{{ tab.onClick }}" style="{{ tab.style }}">{{ tab.label }}</button>
+      </sc-for>
+    </div>
+    <div style="background:linear-gradient(180deg,#170f0a,#100b07);border:1px solid rgba(201,162,75,.18);border-radius:14px;padding:14px 30px">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2px 46px">
+        <sc-for list="{{ items }}" as="it" hint-placeholder-count="10">
+          <div style="display:flex;align-items:baseline;gap:12px;padding:15px 0;border-bottom:1px dashed rgba(255,255,255,.08)">
+            <div style="flex:1;min-width:0">
+              <span style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.22rem;color:#f6efe4;text-transform:uppercase;letter-spacing:.02em">{{ it.name }}</span>
+              <div style="color:#a99e90;font-size:.9rem;margin-top:2px">{{ it.desc }}</div>
+            </div>
+            <div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.2rem;color:#c9a24b;white-space:nowrap">{{ it.price }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="text-align:center;padding:22px 0 8px;color:#8f857a;font-size:.86rem">{{ t.menuNote }}</div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="tel:+4917662449413" style="display:inline-flex;align-items:center;gap:10px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;letter-spacing:.08em;text-transform:uppercase;padding:16px 34px;border-radius:7px;animation:yz-pulse 2.6s ease-out infinite">{{ t.orderLong }}</a>
+    </div>
+  </div>
+</section>
+
+<section id="iletisim" style="position:relative;padding:96px 22px;background:#0b0806;border-top:1px solid rgba(255,255,255,.05);scroll-margin-top:110px">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center">
+    <div>
+      <div style="font-family:'Barlow Condensed',sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a24b;font-weight:600;font-size:15px">{{ t.contactKicker }}</div>
+      <h2 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;margin:10px 0 26px;color:#fbf5ec;line-height:1">{{ t.contactH2a }} <span style="color:#f0511f">{{ t.contactH2b }}</span></h2>
+
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(255,255,255,.08)">
+        <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" style="margin-top:2px"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;color:#f6efe4;font-size:1.15rem">Kurt-Schumacher-Straße 33</div><div style="color:#a99e90">30159 Hannover</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(255,255,255,.08)">
+        <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" style="margin-top:2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;color:#f6efe4;font-size:1.15rem">Mo – Sa · 10:00 – 00:00</div><div style="color:#a99e90">{{ t.hoursSub }}</div></div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)">
+        <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" style="margin-top:2px"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"></path></svg>
+        <div><a href="tel:+4917662449413" style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;color:#f6efe4;font-size:1.4rem">0176 62449413</a><div><a href="https://instagram.com/yildizhausdesfleisches_grills" target="_blank" style="color:#c9a24b">@yildizhausdesfleisches_grills</a></div></div>
+      </div>
+
+      <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:26px">
+        <a href="tel:+4917662449413" style="display:inline-flex;align-items:center;gap:9px;background:#d61f2a;color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;letter-spacing:.06em;text-transform:uppercase;padding:14px 26px;border-radius:7px">☏ {{ t.contactCta }}</a>
+        <div style="display:inline-flex;align-items:center;gap:10px;border:1.5px dashed rgba(201,162,75,.6);border-radius:7px;padding:11px 18px">
+          <span style="font-family:'Anton',sans-serif;color:#f0511f;font-size:1.6rem;line-height:1">{{ t.pct10 }}</span>
+          <span style="font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;color:#e7ddd0;font-size:.92rem;line-height:1.15">{{ t.discountTitle }}<br><span style="color:#8f857a">{{ t.discountSub }}</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div style="position:relative;height:100%;min-height:380px;border-radius:16px;overflow:hidden;border:1px solid rgba(201,162,75,.2)">
+      <image-slot id="yz-map" shape="rect" placeholder="Dükkan / konum görseli — Kurt-Schumacher-Str. 33"></image-slot>
+      <a href="https://maps.google.com/?q=Kurt-Schumacher-Stra%C3%9Fe+33,+30159+Hannover" target="_blank" style="position:absolute;bottom:16px;left:16px;background:#0b0806;color:#f3ece3;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:11px 18px;border-radius:7px;border:1px solid rgba(201,162,75,.4)">↗ {{ t.mapsBtn }}</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#070504;border-top:1px solid rgba(201,162,75,.2);padding:48px 22px 34px">
+  <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+    <img src="assets/yildiz-logo.png" alt="YILDIZ" style="height:70px;width:auto">
+    <nav style="display:flex;gap:24px;flex-wrap:wrap;font-family:'Barlow Condensed',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:.05em">
+      <a href="#konsept" style="color:#c9bfb2">{{ t.navConcepts }}</a>
+      <a href="#izgara" style="color:#c9bfb2">{{ t.navGrill }}</a>
+      <a href="#fleischtheke" style="color:#c9bfb2">{{ t.navCounter }}</a>
+      <a href="#menu" style="color:#c9bfb2">{{ t.navMenu }}</a>
+      <a href="#iletisim" style="color:#c9bfb2">{{ t.navContact }}</a>
+    </nav>
+  </div>
+  <div style="max-width:1280px;margin:26px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#6f665c;font-size:.86rem">
+    <span>© 2026 YILDIZ — Haus des Fleisches &amp; Grills · Kurt-Schumacher-Str. 33, Hannover</span>
+    <span>{{ t.slogan }}</span>
+  </div>
+</footer>
+
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  state = { cat: 0, lang: 'de' };
+
+  syncLang() {
+    try {
+      document.documentElement.lang = this.state.lang;
+      const titles = {
+        de: 'YILDIZ – Haus des Fleisches & Grills | Metzgerei & Grill Hannover',
+        en: 'YILDIZ – House of Meat & Grill | Butcher & Grill Restaurant Hannover',
+        tr: 'YILDIZ – Et ve Izgara Evi | Kasap & Izgara Restoran Hannover',
+      };
+      if (titles[this.state.lang]) document.title = titles[this.state.lang];
+    } catch (e) {}
+  }
+  componentDidMount() { this.syncLang(); }
+  componentDidUpdate() { this.syncLang(); }
+
+  get L() {
+    return {
+      de: {
+        discount: '10% WILLKOMMENSRABATT', order: 'Online Bestellen', orderLong: 'Jetzt Online Bestellen',
+        navConcepts: 'Konzepte', navGrill: 'Grill', navCounter: 'Fleischtheke', navMenu: 'Speisekarte', navContact: 'Kontakt',
+        h1a: 'Echter Geschmack', h1b: 'aus dem Feuer', slogan: 'Fleisch. Feuer. Leidenschaft.',
+        heroDesc: 'Frisches Fleisch aus unserer eigenen Theke. Nimm es roh mit nach Hause, lass es uns über der Glut grillen oder wähle aus unserer reichhaltigen Karte — du entscheidest.',
+        viewMenu: 'Zur Karte →', statDishes: 'Gerichte', statFresh: 'Frisches Fleisch', statHours: 'Std. geöffnet',
+        conceptKicker: 'Ein Haus · Drei Wege', conceptH2a: 'Ein Haus,', conceptH2b: 'drei Wege',
+        c1title: 'Fleisch mitnehmen', c1sub: 'Zu Hause selbst zubereiten', c1desc: 'Wähle dein Fleisch roh aus unserer Theke, lass es abwiegen und nimm es mit. Zubereitet nach deinem Rezept, über deiner eigenen Glut.', c1link: 'Zur Theke →',
+        c2badge: 'Beliebt', c2title: 'Wir grillen für Sie', c2sub: 'Aussuchen — den Rest machen wir', c2desc: 'Such dein Fleisch aus der Vitrine, den Rest übernehmen wir. Unsere Meister grillen es über der Glut perfekt gegart und bringen es an deinen Tisch.', c2link: 'Bestellen →',
+        c3title: 'Von der Karte', c3sub: 'Direkt aus unserer Speisekarte', c3desc: 'Döner, Kebap, Pide, Pizza, Grillgerichte und Desserts. Wähle aus unserer reichhaltigen Karte — sofort frisch zubereitet.', c3link: 'Karte öffnen →',
+        grillKicker: 'Vom Grill · Frisch vom Feuer', grillH2a: 'Grill-', grillH2b: 'Klassiker', fullMenu: 'Ganze Karte →',
+        dish1: 'Lammhackspieß · mit Reis oder Bulgur', dish2: 'Lammspieß · mit Salat und Bulgur', dish3: 'Gemischter Grillteller · 1 Portion', dish4: 'Mit Joghurt, Knoblauch und Tomatensauce', dish5: 'Kalbfleisch-Döner · Butter & Joghurt', dish6: 'Vom Grill · nach deinem Gargrad',
+        thekeKicker: 'Unsere Fleischtheke', thekeH2a: 'Aussuchen &', thekeH2b: 'frisch mitnehmen', thekeDesc: 'Wähle dein Fleisch ganz frisch selbst an unserer Theke aus. Nimm es roh mit und bereite es zu Hause zu — oder lass es gleich hier von uns grillen. Kalb, Lamm, Hähnchen und mehr, jeden Tag frisch.', thekeBtn1: 'Theke anrufen', thekeBtn2: 'Zur Karte',
+        menuKicker: 'Speisekarte', menuH2a: 'Unsere ganze', menuH2b: 'Karte', menuNote: 'Allergene und Preisänderungen vorbehalten',
+        contactKicker: 'Besuchen Sie uns', contactH2a: 'Nimm', contactH2b: 'Kontakt auf', hoursSub: '6 Tage die Woche geöffnet', contactCta: 'Jetzt anrufen & bestellen',
+        pct10: '10%', discountTitle: 'Willkommensrabatt', discountSub: 'Nur gültig bei Barzahlung', mapsBtn: 'Auf Google Maps öffnen',
+      },
+      en: {
+        discount: '10% WELCOME DISCOUNT', order: 'Order Online', orderLong: 'Order Online Now',
+        navConcepts: 'Concepts', navGrill: 'Grill', navCounter: 'Butcher Counter', navMenu: 'Menu', navContact: 'Contact',
+        h1a: 'Real Flavor', h1b: 'from the Fire', slogan: 'Meat. Fire. Passion.',
+        heroDesc: 'Fresh meat from our own counter. Take it home raw, let us grill it over the embers, or choose from our rich menu — you decide.',
+        viewMenu: 'View Menu →', statDishes: 'Dishes', statFresh: 'Fresh Butcher Meat', statHours: 'Hours open',
+        conceptKicker: 'One House · Three Ways', conceptH2a: 'One Place,', conceptH2b: 'Three Ways',
+        c1title: 'Take It Home', c1sub: 'Cook it yourself at home', c1desc: 'Pick your meat raw from our counter, have it weighed and take it home. Prepared with your own recipe, over your own fire.', c1link: 'See the counter →',
+        c2badge: 'Popular', c2title: 'We Grill It for You', c2sub: 'Choose it — we do the rest', c2desc: 'Select your meat from the display and leave the rest to us. Our masters grill it to perfection over the embers and bring it to your table.', c2link: 'Order now →',
+        c3title: 'From the Menu', c3sub: 'Straight from our menu', c3desc: 'Döner, kebab, pide, pizza, grills and desserts. Choose from our rich menu — freshly prepared right away.', c3link: 'Open menu →',
+        grillKicker: 'From the Grill · Fresh from the Fire', grillH2a: 'Featured', grillH2b: 'Grills', fullMenu: 'Full menu →',
+        dish1: 'Spicy lamb skewer · with rice or bulgur', dish2: 'Lamb skewer · with salad and bulgur', dish3: 'Mixed grill platter · 1 portion', dish4: 'With yogurt, garlic and tomato sauce', dish5: 'Veal döner · butter & yogurt', dish6: 'From the grill · your preferred doneness',
+        thekeKicker: 'Our Butcher Counter', thekeH2a: 'Pick It &', thekeH2b: 'Take It Fresh', thekeDesc: 'Choose your meat completely fresh at our counter yourself. Take it home raw and prepare it, or have us grill it right here. Veal, lamb, chicken and more, fresh every day.', thekeBtn1: 'Call the counter', thekeBtn2: 'View menu',
+        menuKicker: 'Our Menu', menuH2a: 'Our Full', menuH2b: 'Menu', menuNote: 'Allergens and price changes reserved',
+        contactKicker: 'Visit Us', contactH2a: 'Get in', contactH2b: 'Touch', hoursSub: 'Open 6 days a week', contactCta: 'Call now & order',
+        pct10: '10%', discountTitle: 'Welcome discount', discountSub: 'Only valid with cash payment', mapsBtn: 'Open in Google Maps',
+      },
+      tr: {
+        discount: '%10 HOŞGELDİN İNDİRİMİ', order: 'Online Sipariş', orderLong: 'Online Sipariş Ver',
+        navConcepts: 'Konseptler', navGrill: 'Izgara', navCounter: 'Tezgâh', navMenu: 'Menü', navContact: 'İletişim',
+        h1a: 'Ateşle Pişen', h1b: 'Gerçek Lezzet', slogan: 'Et. Ateş. Tutku.',
+        heroDesc: 'Kendi kasap tezgâhımızdan taze et. İster çiğ al eve götür, ister biz közde pişirelim, ister zengin menümüzden seç — karar senin.',
+        viewMenu: 'Menüyü Gör →', statDishes: 'Yemek çeşidi', statFresh: 'Taze kasap eti', statHours: 'Saat açığız',
+        conceptKicker: 'Tek Ev · Üç Yol', conceptH2a: 'Tek Adres,', conceptH2b: 'Üç Yol',
+        c1title: 'Eti Al, Evde Pişir', c1sub: 'Evde kendin hazırla', c1desc: 'Kasap vitrinimizden dilediğin eti çiğ olarak seç, tarttır ve eve götür. Kendi tarifinle, kendi ateşinde pişir.', c1link: 'Tezgâhı gör →',
+        c2badge: 'En Sevilen', c2title: 'Eti Al, Biz Pişirelim', c2sub: 'Seç, gerisini bize bırak', c2desc: 'Vitrinden etini seç, gerisini bize bırak. Ustalarımız közde, mangalda tam kıvamında pişirsin, sofrana getirsin.', c2link: 'Sipariş ver →',
+        c3title: 'Menüden Seç', c3sub: 'Doğrudan menümüzden', c3desc: 'Döner, kebap, pide, pizza, ızgara ve tatlılar. Hazır ve zengin menümüzden dilediğini seç — hemen hazırlansın.', c3link: 'Menüyü aç →',
+        grillKicker: 'Ateşten · Taze Közden', grillH2a: 'Öne Çıkan', grillH2b: 'Izgaralar', fullMenu: 'Tüm menü →',
+        dish1: 'Acılı kuzu · pirinç veya bulgur ile', dish2: 'Kuzu şiş · salata ve bulgur ile', dish3: 'Karışık ızgara · 1 porsiyon', dish4: 'Yoğurt, sarımsak ve domates sosu ile', dish5: 'Süt danası döner · tereyağı & yoğurt', dish6: 'Izgarada · dilediğin pişirme derecesinde',
+        thekeKicker: 'Kasap Tezgâhımız', thekeH2a: 'Tezgâhtan Seç,', thekeH2b: 'Taze Al', thekeDesc: 'İstediğin eti taptaze, kasap tezgâhımızdan kendin seçebilirsin. Çiğ olarak alıp evde hazırla — ya da hemen burada bizim pişirmemizi iste. Süt danası, kuzu, tavuk ve daha fazlası her gün taze.', thekeBtn1: 'Tezgâhı Ara', thekeBtn2: 'Menüye bak',
+        menuKicker: 'Menümüz', menuH2a: 'Tüm', menuH2b: 'Menümüz', menuNote: 'Alerjenler ve fiyat değişiklikleri saklıdır',
+        contactKicker: 'Bizi Ziyaret Edin', contactH2a: 'Bize', contactH2b: 'Ulaşın', hoursSub: 'Haftanın 6 günü açığız', contactCta: 'Şimdi Ara & Sipariş Ver',
+        pct10: '%10', discountTitle: 'Hoşgeldin indirimi', discountSub: 'Sadece nakit ödemede geçerli', mapsBtn: "Google Maps'te aç",
+      },
+    };
+  }
+
+  get categories() {
+    const C = (de, en, tr, items) => ({ de, en, tr, items });
+    const I = (de, en, tr, price, dde, den, dtr) => ({ de, en, tr, price, d: { de: dde || '', en: den || '', tr: dtr || '' } });
+    return [
+      C('Suppen', 'Soups', 'Çorba', [
+        I('Linsensuppe', 'Lentil Soup', 'Mercimek Çorbası', '6€', 'Linsen, Zwiebeln, Kartoffeln, Möhren', 'Lentils, onion, potato, carrot', 'Mercimek, soğan, patates, havuç'),
+        I('Pansensuppe', 'Tripe Soup', 'İşkembe', '6€', 'Mit Knoblauch und Essig', 'With garlic and vinegar', 'Sarımsak ve sirke ile'),
+        I('Lammkopfsuppe', 'Lamb Head Soup', 'Kelle Paça', '7€', 'Traditionelles Rezept', 'Traditional recipe', 'Geleneksel tarif'),
+        I('Hühnersuppe', 'Chicken Soup', 'Tavuk Çorbası', '6€', 'Mit Gemüse und Gewürzen', 'With vegetables and spices', 'Sebze ve baharatlarla'),
+      ]),
+      C('Vorspeisen', 'Starters', 'Meze', [
+        I('Zaziki', 'Tzatziki', 'Cacık', '5€', 'Joghurt, Gurken, Knoblauch', 'Yogurt, cucumber, garlic', 'Yoğurt, salatalık, sarımsak'),
+        I('Auberginencreme', 'Aubergine Cream', 'Patlıcan Ezme', '7€', 'Aubergine, Joghurt, Knoblauch', 'Aubergine, yogurt, garlic', 'Patlıcan, yoğurt, sarımsak'),
+        I('Humus', 'Hummus', 'Humus', '6€', 'Kichererbsen, Sesam, Zitrone', 'Chickpea, sesame, lemon', 'Nohut, susam, limon'),
+        I('Ezme', 'Ezme', 'Ezme', '5€', 'Paprika, Zwiebeln, Tomaten', 'Pepper, onion, tomato', 'Biber, soğan, domates'),
+        I('Gemüseteller', 'Fried Veg Plate', 'Karışık Kızartma', '10€', 'Gebratenes Gemüse mit Joghurt', 'Fried vegetables with yogurt', 'Kızarmış sebze, yoğurtla'),
+        I('Kibbeh (1 St.)', 'Kibbeh (1 pc)', 'İçli Köfte (1 adet)', '3€', 'Bulgur, Hackfleisch, Pistazien', 'Bulgur, minced meat, pistachio', 'Bulgur, kıyma, fıstık'),
+        I('Sigara Böregi (4 St.)', 'Cheese Rolls (4 pc)', 'Sigara Böreği (4 adet)', '7€', 'Mit Käse', 'With cheese', 'Peynirli'),
+      ]),
+      C('Salate', 'Salads', 'Salata', [
+        I('Hirtensalat', "Shepherd's Salad", 'Çoban Salatası', '8€', 'Tomaten, Gurken, Zwiebeln, Hirtenkäse', 'Tomato, cucumber, onion, feta', 'Domates, salatalık, soğan, beyaz peynir'),
+        I('Krautsalat', 'Cabbage Salad', 'Lahana Salatası', '6€', 'Weiß- und Rotkohl', 'White and red cabbage', 'Beyaz ve kırmızı lahana'),
+        I('Gemischte Salat', 'Mixed Salad', 'Karışık Salata', '8€', 'Tomaten, Hirtenkäse', 'Tomato, feta', 'Domates, beyaz peynir'),
+        I('Hähnchensalat', 'Chicken Salad', 'Tavuklu Salata', '9€', 'Hähnchen, Käse, Oliven, Rucola', 'Chicken, cheese, olives, rocket', 'Tavuk, peynir, zeytin, roka'),
+      ]),
+      C('Döner & Köfte', 'Döner & Köfte', 'Döner & Köfte', [
+        I('Dönertasche', 'Döner in Bread', 'Dönertasche', '8€', 'Kalbfleisch, Fladenbrot', 'Veal, flatbread', 'Süt danası, ekmek'),
+        I('Dürüm Döner', 'Döner Wrap', 'Dürüm Döner', '10€', 'Im Lavash, Salat und Sauce', 'In lavash, salad and sauce', 'Lavaşta, salata ve sos'),
+        I('Döner Teller', 'Döner Plate', 'Döner Teller', '10€', 'Mit Reis oder Bulgur', 'With rice or bulgur', 'Pirinç veya bulgur ile'),
+        I('İskender', 'İskender', 'İskender', '17€', 'Butter, Tomatensauce, Joghurt', 'Butter, tomato sauce, yogurt', 'Tereyağı, domates, yoğurt'),
+        I('Dönerbox', 'Döner Box', 'Döner Box', '9€', 'Mit Reis oder Bulgur', 'With rice or bulgur', 'Pirinç veya bulgur ile'),
+        I('Köfte Dürüm', 'Köfte Wrap', 'Köfte Dürüm', '9€', 'Im Lavash, Salat und Sauce', 'In lavash, salad and sauce', 'Lavaşta, salata ve sos'),
+        I('Köfte-Teller (Grill)', 'Grilled Köfte Plate', 'Köfte Teller (Izgara)', '18€', 'Lammfrikadelle, Reis/Bulgur', 'Lamb köfte, rice/bulgur', 'Kuzu köfte, pirinç/bulgur'),
+        I('Falafelteller', 'Falafel Plate', 'Falafel Teller', '11€', 'Mit Reis oder Bulgur', 'With rice or bulgur', 'Pirinç veya bulgur ile'),
+      ]),
+      C('Grill', 'Grill', 'Izgara', [
+        I('Adana Kebap 🌶', 'Adana Kebab 🌶', 'Adana Kebap 🌶', '17€', 'Scharf, Reis oder Bulgur', 'Spicy, rice or bulgur', 'Acılı, pirinç veya bulgur'),
+        I('Urfa Kebap', 'Urfa Kebab', 'Urfa Kebap', '18€', 'Nicht scharf, Reis/Bulgur', 'Mild, rice/bulgur', 'Acısız, pirinç/bulgur'),
+        I('Lammspieß', 'Lamb Skewer', 'Kuzu Şiş', '20€', 'Mit Salat und Bulgur', 'With salad and bulgur', 'Salata ve bulgur ile'),
+        I('Hähnchenspieß', 'Chicken Skewer', 'Tavuk Şiş', '17€', 'Mit Salat und Bulgur', 'With salad and bulgur', 'Salata ve bulgur ile'),
+        I('Hähnchenkotelett', 'Chicken Chops', 'Tavuk Pirzola', '17€', 'Mit Salat und Bulgur', 'With salad and bulgur', 'Salata ve bulgur ile'),
+        I('Beyti Kebab', 'Beyti Kebab', 'Beyti Kebap', '20€', 'Joghurt, Knoblauch, Tomatensauce', 'Yogurt, garlic, tomato sauce', 'Yoğurt, sarımsak, domates sosu'),
+        I('Ali Nazik', 'Ali Nazik', 'Ali Nazik', '23€', 'Auberginencreme, Joghurt', 'Aubergine cream, yogurt', 'Patlıcan ezmesi, yoğurt'),
+        I('Lammkoteletts', 'Lamb Chops', 'Kuzu Pirzola', '25€', 'Reis/Bulgur, Salat, Sauce', 'Rice/bulgur, salad, sauce', 'Pirinç/bulgur, salata, sos'),
+        I('Gemischter Grillteller (1 P.)', 'Mixed Grill (1 pers.)', 'Yıldız Karışık Izgara (1 Pors.)', '25€', 'Kotelett, Köfte, Lamm & Hähnchen', 'Chops, köfte, lamb & chicken', 'Pirzola, köfte, kuzu & tavuk'),
+        I('Rindersteak 250g', 'Beef Steak 250g', 'Rindersteak 250g', '25€', 'Vom Grill, nach Wunsch', 'From the grill, to taste', 'Izgarada, dilediğin kıvamda'),
+        I('Rinderfilet 250g', 'Beef Fillet 250g', 'Rinderfilet 250g', '30€', 'Besonders zart', 'Extra tender', 'Özel yumuşak'),
+        I('Rinderleber', 'Beef Liver', 'Kuzu Ciğer', '18€', 'Gegrillt, mit Zwiebeln', 'Grilled, with onions', 'Izgara, soğanla'),
+      ]),
+      C('Pide', 'Pide', 'Pide', [
+        I('Pide mit Hackfleisch', 'Minced Meat Pide', 'Kıymalı Pide', '10€', '', '', ''),
+        I('Pide mit Kavurma', 'Kavurma Pide', 'Kavurmalı Pide', '12€', '', '', ''),
+        I('Pide mit Goudakäse', 'Cheese Pide', 'Kaşarlı Pide', '10€', '', '', ''),
+        I('Pide mit Hirtenkäse', 'Feta Pide', 'Beyaz Peynirli Pide', '11€', '', '', ''),
+        I('Pide mit Fleischwürfeln', 'Diced Meat Pide', 'Kuşbaşılı Pide', '13€', '', '', ''),
+        I('Pide mit Rinderschinken', 'Pastırma Pide', 'Pastırmalı Pide', '13€', '', '', ''),
+        I('Pide mit Knoblauchwurst', 'Sucuk Pide', 'Sucuklu Pide', '12€', '', '', ''),
+        I('Pide mit Döner', 'Döner Pide', 'Dönerli Pide', '14€', 'Kalbfleisch-Döner & Gouda', 'Veal döner & gouda', 'Süt danası döner ve gouda'),
+      ]),
+      C('Pizza', 'Pizza', 'Pizza', [
+        I('Margherita', 'Margherita', 'Margarita', '8€', 'Mit Mozzarella', 'With mozzarella', 'Mozzarella ile'),
+        I('Salami', 'Salami', 'Salamlı', '10€', 'Rindersalami und Gouda', 'Beef salami and gouda', 'Dana salam ve gouda'),
+        I('Thunfisch', 'Tuna', 'Ton Balıklı', '10€', 'Thunfisch, Zwiebeln, Gouda', 'Tuna, onion, gouda', 'Ton, soğan, gouda'),
+        I('Funghi', 'Funghi', 'Mantarlı', '9€', 'Paprika, Champignons, Tomaten', 'Pepper, mushroom, tomato', 'Biber, mantar, domates'),
+        I('Sucuk', 'Sucuk', 'Sucuklu', '10€', 'Knoblauchwurst, Zwiebeln, Gouda', 'Garlic sausage, onion, gouda', 'Sucuk, soğan, gouda'),
+        I('Vegetarisch', 'Vegetarian', 'Vejetaryen', '9€', 'Broccoli, Champignons, Paprika, Mais', 'Broccoli, mushroom, pepper, corn', 'Brokoli, mantar, biber, mısır'),
+      ]),
+      C('Lahmacun', 'Lahmacun', 'Lahmacun', [
+        I('Lahmacun', 'Lahmacun', 'Lahmacun', '5€', 'Mit Hackfleisch, gemischtem Salat', 'With minced meat, mixed salad', 'Kıyma, karışık salata ile'),
+        I('Lahmacun mit Döner', 'Lahmacun with Döner', 'Dönerli Lahmacun', '11€', 'Kalbfleisch-Döner, Salat', 'Veal döner, salad', 'Yaprak döner, salata ile'),
+      ]),
+      C('Dessert', 'Desserts', 'Tatlı', [
+        I('Baklava', 'Baklava', 'Baklava', '6€', 'Mit Pistazien', 'With pistachio', 'Fıstıklı'),
+        I('Künefe', 'Künefe', 'Künefe', '8€', 'Warme Süßspeise mit Käse', 'Warm dessert with cheese', 'Peynirli sıcak tatlı'),
+        I('Milchreis', 'Baked Rice Pudding', 'Fırın Sütlaç', '5€', 'Aus dem Ofen', 'From the oven', 'Fırında pişmiş'),
+      ]),
+      C('Getränke', 'Drinks', 'İçecek', [
+        I('Ayran', 'Ayran', 'Ayran', '2€', 'Joghurt-Getränk · 0,25 l', 'Yogurt drink · 0.25 l', 'Yoğurt içeceği · 0,25 l'),
+        I('Rübensaft', 'Turnip Juice', 'Şalgam Suyu', '3€', 'Scharf oder mild · 0,25 l', 'Spicy or mild · 0.25 l', 'Acılı veya acısız · 0,25 l'),
+        I('Uludag Gazoz', 'Uludag Soda', 'Uludağ Gazoz', '3€', '0,33 l', '0.33 l', '0,33 l'),
+        I('Coca-Cola', 'Coca-Cola', 'Coca-Cola', '3€', 'Cola / Light / Zero · 0,33 l', 'Cola / Light / Zero · 0.33 l', 'Cola / Light / Zero · 0,33 l'),
+        I('Fanta', 'Fanta', 'Fanta', '3€', 'Fanta / Exotic · 0,33 l', 'Fanta / Exotic · 0.33 l', 'Fanta / Exotic · 0,33 l'),
+        I('Orangensaft', 'Orange Juice', 'Portakal Suyu', '3€', '0,2 l', '0.2 l', '0,2 l'),
+        I('Wasser m. Kohlensäure', 'Sparkling Water', 'Soda', '2€', '0,25 l', '0.25 l', '0,25 l'),
+        I('Wasser still', 'Still Water', 'Su', '2€', '0,25 l', '0.25 l', '0,25 l'),
+      ]),
+    ];
+  }
+
+  renderVals() {
+    const lang = this.state.lang;
+    const t = this.L[lang];
+    const cats = this.categories;
+    const active = this.state.cat;
+
+    const langBtns = ['de', 'en', 'tr'].map((code) => ({
+      code: code.toUpperCase(),
+      onClick: () => this.setState({ lang: code }),
+      style: {
+        fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: '12px',
+        letterSpacing: '.08em', cursor: 'pointer', padding: '3px 8px', borderRadius: '4px',
+        border: 'none', transition: 'all .15s',
+        background: code === lang ? '#d61f2a' : 'rgba(255,255,255,.07)',
+        color: code === lang ? '#fff' : '#c9a24b',
+      },
+    }));
+
+    const tabs = cats.map((c, i) => ({
+      label: c[lang],
+      onClick: () => this.setState({ cat: i }),
+      style: {
+        fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: '1.02rem',
+        letterSpacing: '.05em', textTransform: 'uppercase', cursor: 'pointer',
+        padding: '9px 18px', borderRadius: '7px', transition: 'all .18s',
+        border: i === active ? '1px solid #d61f2a' : '1px solid rgba(201,162,75,.28)',
+        background: i === active ? '#d61f2a' : 'transparent',
+        color: i === active ? '#fff' : '#cdbfae',
+        boxShadow: i === active ? '0 8px 24px rgba(214,31,42,.35)' : 'none',
+      },
+    }));
+
+    const items = cats[active].items.map((it) => ({ name: it[lang], desc: it.d[lang], price: it.price }));
+
+    const R = React;
+    const rnd = (i, s) => { const x = Math.sin(i * 127.1 + s * 311.7) * 43758.5453; return x - Math.floor(x); };
+    const N = 30;
+    const layer = (cfg) => {
+      const arr = [];
+      for (let i = 0; i < N; i++) {
+        const left = (i / (N - 1)) * 100;
+        const w = cfg.w0 + rnd(i, cfg.s) * cfg.wv;
+        const h = cfg.h0 + rnd(i, cfg.s + 9) * cfg.hv;
+        const dur = 1.2 + rnd(i, cfg.s + 3) * 1.1;
+        const delay = -(rnd(i, cfg.s + 5) * 2.5);
+        arr.push(R.createElement('div', { key: cfg.k + i, style: {
+          position: 'absolute', bottom: cfg.bottom, left: left + '%',
+          width: w + 'px', height: h + 'px', marginLeft: (-w / 2) + 'px',
+          background: cfg.bg, borderRadius: '50% 50% 46% 46% / 64% 64% 40% 40%',
+          filter: 'blur(' + cfg.blur + 'px)', transformOrigin: 'bottom center',
+          mixBlendMode: 'screen', opacity: cfg.op,
+          animation: 'yz-flicker ' + dur + 's ease-in-out ' + delay + 's infinite',
+        } }));
+      }
+      return arr;
+    };
+    const back = layer({ k: 'b', s: 1, bottom: '-40px', w0: 80, wv: 90, h0: 150, hv: 180, blur: 24, op: .6, bg: 'radial-gradient(58% 82% at 50% 100%, #c11510 0%, #7a0d08 52%, rgba(122,13,8,0) 78%)' });
+    const mid = layer({ k: 'm', s: 4, bottom: '-24px', w0: 46, wv: 60, h0: 110, hv: 150, blur: 12, op: .8, bg: 'radial-gradient(55% 80% at 50% 100%, #ff7a1a 0%, #f0511f 48%, rgba(240,81,31,0) 76%)' });
+    const front = layer({ k: 'f', s: 7, bottom: '-14px', w0: 22, wv: 34, h0: 60, hv: 110, blur: 6, op: .92, bg: 'radial-gradient(52% 78% at 50% 100%, #ffe9a6 0%, #ffce5a 42%, rgba(255,150,40,0) 74%)' });
+
+    const embers = [];
+    for (let i = 0; i < 42; i++) {
+      const size = 2 + rnd(i, 8) * 5;
+      const dur = 3 + rnd(i, 9) * 4;
+      const delay = -(rnd(i, 10) * 7);
+      const drift = (rnd(i, 11) * 2 - 1) * 70;
+      embers.push(R.createElement('div', { key: 'e' + i, style: {
+        position: 'absolute', bottom: '10px', left: (rnd(i, 7) * 100) + '%',
+        width: size + 'px', height: size + 'px', borderRadius: '50%',
+        background: 'radial-gradient(circle,#ffe08a 0%,#ff7a1a 55%,rgba(255,90,10,0) 100%)',
+        '--drift': drift + 'px', opacity: 0,
+        animation: 'yz-ember ' + dur + 's linear ' + delay + 's infinite',
+      } }));
+    }
+    const glow = R.createElement('div', { key: 'glow', style: {
+      position: 'absolute', left: 0, right: 0, bottom: '-40px', height: '230px',
+      background: 'radial-gradient(80% 100% at 50% 100%, rgba(255,120,30,.6) 0%, rgba(214,31,20,.28) 45%, rgba(0,0,0,0) 72%)',
+      filter: 'blur(16px)', transformOrigin: 'bottom', pointerEvents: 'none',
+      animation: 'yz-glow 3.4s ease-in-out infinite',
+    } });
+    const fire = R.createElement('div', { style: {
+      position: 'absolute', left: 0, right: 0, bottom: 0, height: '360px',
+      zIndex: 4, pointerEvents: 'none', overflow: 'hidden',
+    } }, glow, ...back, ...mid, ...front, ...embers);
+
+    return { t, lang, langBtns, tabs, items, fire };
+  }
+}
+</script>
+
+
+</body></html>
