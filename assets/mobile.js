@@ -86,7 +86,7 @@
     });
     menu.appendChild(nav);
 
-    var order = el("a", { class: "yzm-order", href: TEL }, "&#128722;&nbsp; Jetzt anrufen &amp; bestellen");
+    var order = el("a", { class: "yzm-order", href: TEL }, "&#128722;&nbsp; Jetzt Online Bestellen");
     order.addEventListener("click", function () { closeMenu(); });
     menu.appendChild(order);
 
