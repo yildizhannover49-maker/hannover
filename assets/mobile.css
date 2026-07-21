@@ -26,6 +26,10 @@
   /* Platz für unsere fixe Bar schaffen (Seiteninhalt nach unten) */
   #dc-root { padding-top: 76px; }
 
+  /* Hero: großer Oberrand entfällt auf dem Handy (Logo sitzt jetzt in der Bar,
+     die 76px-Bar-Freiraum wird bereits über #dc-root abgedeckt) */
+  .yz-hero { padding-top: 40px !important; align-items: flex-start !important; }
+
   /* ---- Fixe Mobile-Bar ---- */
   #yzm-bar {
     display: flex; align-items: center; justify-content: space-between;
