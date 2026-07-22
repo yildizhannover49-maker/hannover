@@ -139,3 +139,11 @@
     font-weight: 800; letter-spacing: .04em; text-transform: uppercase; font-size: 17px;
   }
 }
+
+/* Hero-Bild: auf Desktop die komplette Komposition zeigen (kein Zoom-Crop durch hohen Hero) */
+@media (min-width: 821px) {
+  .yz-heroimg {
+    object-fit: contain !important;
+    object-position: center right !important;
+  }
+}
