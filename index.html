@@ -561,6 +561,26 @@ a:hover{color:#f0511f}
       <a href="https://maps.google.com/?q=Kurt-Schumacher-Stra%C3%9Fe+33,+30159+Hannover" target="_blank" style="position:absolute;bottom:16px;left:16px;background:#0b0806;color:#f3ece3;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:11px 18px;border-radius:7px;border:1px solid rgba(201,162,75,.4)">↗ {{ t.mapsBtn }}</a>
     </div>
   </div>
+
+  <div style="max-width:1280px;margin:56px auto 0;background:linear-gradient(180deg,#170f0a,#100b07);border:1px solid rgba(201,162,75,.18);border-radius:16px;padding:38px 26px">
+    <div style="max-width:720px;margin:0 auto">
+      <h3 style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.2rem);text-transform:uppercase;margin:0 0 6px;color:#fbf5ec;text-align:center">{{ t.formTitle }}</h3>
+      <p style="text-align:center;color:#a99e90;margin:0 0 26px;font-size:.95rem">{{ t.formSub }}</p>
+      <form id="yz-contact-form" novalidate>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:14px">
+          <input id="yz-cf-name" name="name" type="text" maxlength="120" placeholder="{{ t.formName }}" style="width:100%;background:#0b0806;border:1px solid rgba(201,162,75,.25);border-radius:8px;padding:13px 15px;color:#f6efe4;font:inherit;outline:none">
+          <input id="yz-cf-contact" name="contact" type="text" maxlength="160" placeholder="{{ t.formContact }}" style="width:100%;background:#0b0806;border:1px solid rgba(201,162,75,.25);border-radius:8px;padding:13px 15px;color:#f6efe4;font:inherit;outline:none">
+        </div>
+        <textarea id="yz-cf-msg" name="message" rows="5" maxlength="2000" placeholder="{{ t.formMsg }}" style="width:100%;background:#0b0806;border:1px solid rgba(201,162,75,.25);border-radius:8px;padding:13px 15px;color:#f6efe4;font:inherit;outline:none;margin-top:14px;resize:vertical"></textarea>
+        <input id="yz-cf-hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-5000px;width:1px;height:1px;opacity:0">
+        <div id="yz-cf-status" role="status" style="min-height:24px;margin-top:12px;font-family:'Barlow Condensed',sans-serif;font-size:1.08rem;text-align:center"></div>
+        <div style="text-align:center">
+          <button id="yz-cf-send" type="submit" style="display:inline-flex;align-items:center;gap:10px;background:#d61f2a;color:#fff;border:none;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.08em;text-transform:uppercase;padding:15px 34px;border-radius:7px;margin-top:6px">{{ t.formSend }}</button>
+        </div>
+        <p style="color:#6f665c;font-size:.8rem;margin:16px 0 0;text-align:center">{{ t.formPrivacy }}</p>
+      </form>
+    </div>
+  </div>
 </section>
 
 <footer style="background:#070504;border-top:1px solid rgba(201,162,75,.2);padding:48px 22px 34px">
@@ -623,6 +643,7 @@ class Component extends DCLogic {
         menuKicker: 'Speisekarte', menuH2a: 'Unsere ganze', menuH2b: 'Karte', menuNote: 'Allergene und Preisänderungen vorbehalten',
         contactKicker: 'Besuchen Sie uns', contactH2a: 'Nimm', contactH2b: 'Kontakt auf', hoursSub: '6 Tage die Woche geöffnet', contactCta: 'Jetzt anrufen & bestellen',
         pct10: '10%', discountTitle: 'Willkommensrabatt', discountSub: 'Nur gültig bei Barzahlung', mapsBtn: 'Auf Google Maps öffnen',
+        formTitle: 'Schreib uns', formSub: 'Fragen, Reservierungen oder größere Bestellungen — schick uns einfach eine Nachricht.', formName: 'Dein Name', formContact: 'Telefon oder E-Mail', formMsg: 'Deine Nachricht', formSend: 'Nachricht senden', formPrivacy: 'Deine Daten werden nur zur Bearbeitung deiner Anfrage verwendet.',
       },
       en: {
         discount: '10% WELCOME DISCOUNT', order: 'Order Online', orderLong: 'Order Online Now',
@@ -640,6 +661,7 @@ class Component extends DCLogic {
         menuKicker: 'Our Menu', menuH2a: 'Our Full', menuH2b: 'Menu', menuNote: 'Allergens and price changes reserved',
         contactKicker: 'Visit Us', contactH2a: 'Get in', contactH2b: 'Touch', hoursSub: 'Open 6 days a week', contactCta: 'Call now & order',
         pct10: '10%', discountTitle: 'Welcome discount', discountSub: 'Only valid with cash payment', mapsBtn: 'Open in Google Maps',
+        formTitle: 'Write to Us', formSub: 'Questions, reservations or larger orders — just send us a message.', formName: 'Your name', formContact: 'Phone or email', formMsg: 'Your message', formSend: 'Send message', formPrivacy: 'Your data is only used to process your request.',
       },
       tr: {
         discount: '%10 HOŞGELDİN İNDİRİMİ', order: 'Online Sipariş', orderLong: 'Online Sipariş Ver',
@@ -657,6 +679,7 @@ class Component extends DCLogic {
         menuKicker: 'Menümüz', menuH2a: 'Tüm', menuH2b: 'Menümüz', menuNote: 'Alerjenler ve fiyat değişiklikleri saklıdır',
         contactKicker: 'Bizi Ziyaret Edin', contactH2a: 'Bize', contactH2b: 'Ulaşın', hoursSub: 'Haftanın 6 günü açığız', contactCta: 'Şimdi Ara & Sipariş Ver',
         pct10: '%10', discountTitle: 'Hoşgeldin indirimi', discountSub: 'Sadece nakit ödemede geçerli', mapsBtn: "Google Maps'te aç",
+        formTitle: 'Bize Yazın', formSub: 'Soru, rezervasyon veya büyük siparişler için bize mesaj bırakın.', formName: 'Adınız', formContact: 'Telefon veya e-posta', formMsg: 'Mesajınız', formSend: 'Mesaj Gönder', formPrivacy: 'Verileriniz yalnızca talebinizin işlenmesi için kullanılır.',
       },
     };
   }
@@ -842,4 +865,5 @@ class Component extends DCLogic {
 
 
 <script src="assets/mobile.js" defer></script>
+<script src="assets/contact.js" defer></script>
 </body></html>
