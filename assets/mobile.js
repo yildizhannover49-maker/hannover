@@ -10,6 +10,7 @@
   "use strict";
   var LOGO = "assets/yildiz-logo.svg";
   var TEL = "tel:+4917662449413";
+  var ORDER_URL = "https://www.vidofood.de/yildizgrill";
   var HOURS = "Mo–Sa · 10:00 – 00:00";
   var NAV = [
     ["KONZEPTE", "#konsept"],
@@ -86,7 +87,7 @@
     });
     menu.appendChild(nav);
 
-    var order = el("a", { class: "yzm-order", href: TEL }, "&#128722;&nbsp; Jetzt Online Bestellen");
+    var order = el("a", { class: "yzm-order", href: ORDER_URL, target: "_blank", rel: "noopener" }, "&#128722;&nbsp; Jetzt Online Bestellen");
     order.addEventListener("click", function () { closeMenu(); });
     menu.appendChild(order);
 
