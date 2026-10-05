@@ -11,7 +11,7 @@
   var LOGO = "assets/yildiz-logo.svg";
   var TEL = "tel:+4917662449413";
   var ORDER_URL = "https://www.vidofood.de/yildizgrill";
-  var HOURS = "Mo–Sa · 10:00 – 00:00";
+  var HOURS = "Mo–So · 10:00 – 00:00";
   var NAV = [
     ["KONZEPTE", "#konsept"],
     ["GRILL", "#izgara"],

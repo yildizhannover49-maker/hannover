@@ -10,7 +10,7 @@
 <x-dc>
 <helmet>
 <title>YILDIZ – Haus des Fleisches &amp; Grills | Metzgerei &amp; Grill Restaurant Hannover</title>
-<meta name="description" content="YILDIZ Haus des Fleisches &amp; Grills in Hannover: frisches Fleisch aus eigener Theke. Fleisch roh mitnehmen, von uns grillen lassen oder aus der Karte wählen – Döner, Adana, Kuzu Şiş, Pide, Pizza. Mo–Sa 10–24 Uhr.">
+<meta name="description" content="YILDIZ Haus des Fleisches &amp; Grills in Hannover: frisches Fleisch aus eigener Theke. Fleisch roh mitnehmen, von uns grillen lassen oder aus der Karte wählen – Döner, Adana, Kuzu Şiş, Pide, Pizza. Mo–So 10–24 Uhr.">
 <meta name="keywords" content="Metzgerei Hannover, Fleischerei Hannover, Grill Restaurant Hannover, Döner Hannover, Kebap Hannover, türkisches Restaurant Hannover, Fleischtheke, Adana Kebap, Kuzu Şiş, Pide, YILDIZ Hannover, Kurt-Schumacher-Straße">
 <meta name="robots" content="index, follow">
 <meta name="author" content="YILDIZ – Haus des Fleisches &amp; Grills">
@@ -52,9 +52,9 @@
   "geo": { "@type": "GeoCoordinates", "latitude": 52.3799, "longitude": 9.7302 },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
     "opens": "10:00",
-    "closes": "00:00"
+    "closes": "23:59"
   }],
   "sameAs": ["https://instagram.com/yildizhausdesfleisches_grills"],
   "hasMenu": "https://yildizgrill.de/#menu"
@@ -325,7 +325,7 @@ a:hover{color:#f0511f}
 
 <header style="position:fixed;top:0;left:0;right:0;z-index:50;background:linear-gradient(180deg,rgba(11,8,6,.96),rgba(11,8,6,.82));backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.22)">
   <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:6px 22px;font-family:'Barlow Condensed',sans-serif;font-size:13px;letter-spacing:.06em;color:#c9a24b;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,.05);flex-wrap:wrap">
-    <span style="display:flex;align-items:center;gap:8px"><span style="color:#f0511f">●</span> Mo–Sa · 10:00 – 00:00</span>
+    <span style="display:flex;align-items:center;gap:8px"><span style="color:#f0511f">●</span> Mo–So · 10:00 – 00:00</span>
     <span style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
       <span style="display:flex;align-items:center;gap:5px">
         <sc-for list="{{ langBtns }}" as="lb" hint-placeholder-count="3">
@@ -538,7 +538,7 @@ a:hover{color:#f0511f}
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(255,255,255,.08)">
         <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" style="margin-top:2px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
-        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;color:#f6efe4;font-size:1.15rem">Mo – Sa · 10:00 – 00:00</div><div style="color:#a99e90">{{ t.hoursSub }}</div></div>
+        <div><div style="font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;color:#f6efe4;font-size:1.15rem">Mo – So · 10:00 – 00:00</div><div style="color:#a99e90">{{ t.hoursSub }}</div></div>
       </div>
       <div style="display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)">
         <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#f0511f" stroke-width="1.8" style="margin-top:2px"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.5-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"></path></svg>
@@ -640,7 +640,7 @@ class Component extends DCLogic {
         dish1: 'Lammhackspieß · mit Reis oder Bulgur', dish2: 'Lammspieß · mit Salat und Bulgur', dish3: 'Gemischter Grillteller · 1 Portion', dish4: 'Mit Joghurt, Knoblauch und Tomatensauce', dish5: 'Kalbfleisch-Döner · Butter & Joghurt', dish6: 'Vom Grill · nach deinem Gargrad',
         thekeKicker: 'Unsere Fleischtheke', thekeH2a: 'Aussuchen &', thekeH2b: 'frisch mitnehmen', thekeDesc: 'Wähle dein Fleisch ganz frisch selbst an unserer Theke aus. Nimm es roh mit und bereite es zu Hause zu — oder lass es gleich hier von uns grillen. Kalb, Lamm, Hähnchen und mehr, jeden Tag frisch.', thekeBtn1: 'Zum Shop', thekeBtn2: 'Zur Karte',
         menuKicker: 'Speisekarte', menuH2a: 'Unsere ganze', menuH2b: 'Karte', menuNote: 'Allergene und Preisänderungen vorbehalten',
-        contactKicker: 'Besuchen Sie uns', contactH2a: 'Nimm', contactH2b: 'Kontakt auf', hoursSub: '6 Tage die Woche geöffnet', contactCta: 'Jetzt anrufen & bestellen',
+        contactKicker: 'Besuchen Sie uns', contactH2a: 'Nimm', contactH2b: 'Kontakt auf', hoursSub: '7 Tage die Woche geöffnet', contactCta: 'Jetzt anrufen & bestellen',
         pct10: '10%', discountTitle: 'Willkommensrabatt', discountSub: 'Nur gültig bei Barzahlung', mapsBtn: 'Auf Google Maps öffnen',
         formTitle: 'Schreib uns', formSub: 'Fragen, Reservierungen oder größere Bestellungen — schick uns einfach eine Nachricht.', formName: 'Dein Name', formContact: 'Telefon oder E-Mail', formMsg: 'Deine Nachricht', formSend: 'Nachricht senden', formPrivacy: 'Deine Daten werden nur zur Bearbeitung deiner Anfrage verwendet.',
       },
@@ -658,7 +658,7 @@ class Component extends DCLogic {
         dish1: 'Spicy lamb skewer · with rice or bulgur', dish2: 'Lamb skewer · with salad and bulgur', dish3: 'Mixed grill platter · 1 portion', dish4: 'With yogurt, garlic and tomato sauce', dish5: 'Veal döner · butter & yogurt', dish6: 'From the grill · your preferred doneness',
         thekeKicker: 'Our Butcher Counter', thekeH2a: 'Pick It &', thekeH2b: 'Take It Fresh', thekeDesc: 'Choose your meat completely fresh at our counter yourself. Take it home raw and prepare it, or have us grill it right here. Veal, lamb, chicken and more, fresh every day.', thekeBtn1: 'To the Shop', thekeBtn2: 'View menu',
         menuKicker: 'Our Menu', menuH2a: 'Our Full', menuH2b: 'Menu', menuNote: 'Allergens and price changes reserved',
-        contactKicker: 'Visit Us', contactH2a: 'Get in', contactH2b: 'Touch', hoursSub: 'Open 6 days a week', contactCta: 'Call now & order',
+        contactKicker: 'Visit Us', contactH2a: 'Get in', contactH2b: 'Touch', hoursSub: 'Open 7 days a week', contactCta: 'Call now & order',
         pct10: '10%', discountTitle: 'Welcome discount', discountSub: 'Only valid with cash payment', mapsBtn: 'Open in Google Maps',
         formTitle: 'Write to Us', formSub: 'Questions, reservations or larger orders — just send us a message.', formName: 'Your name', formContact: 'Phone or email', formMsg: 'Your message', formSend: 'Send message', formPrivacy: 'Your data is only used to process your request.',
       },
@@ -676,7 +676,7 @@ class Component extends DCLogic {
         dish1: 'Acılı kuzu · pirinç veya bulgur ile', dish2: 'Kuzu şiş · salata ve bulgur ile', dish3: 'Karışık ızgara · 1 porsiyon', dish4: 'Yoğurt, sarımsak ve domates sosu ile', dish5: 'Süt danası döner · tereyağı & yoğurt', dish6: 'Izgarada · dilediğin pişirme derecesinde',
         thekeKicker: 'Kasap Tezgâhımız', thekeH2a: 'Tezgâhtan Seç,', thekeH2b: 'Taze Al', thekeDesc: 'İstediğin eti taptaze, kasap tezgâhımızdan kendin seçebilirsin. Çiğ olarak alıp evde hazırla — ya da hemen burada bizim pişirmemizi iste. Süt danası, kuzu, tavuk ve daha fazlası her gün taze.', thekeBtn1: 'Mağazaya Git', thekeBtn2: 'Menüye bak',
         menuKicker: 'Menümüz', menuH2a: 'Tüm', menuH2b: 'Menümüz', menuNote: 'Alerjenler ve fiyat değişiklikleri saklıdır',
-        contactKicker: 'Bizi Ziyaret Edin', contactH2a: 'Bize', contactH2b: 'Ulaşın', hoursSub: 'Haftanın 6 günü açığız', contactCta: 'Şimdi Ara & Sipariş Ver',
+        contactKicker: 'Bizi Ziyaret Edin', contactH2a: 'Bize', contactH2b: 'Ulaşın', hoursSub: 'Haftanın 7 günü açığız', contactCta: 'Şimdi Ara & Sipariş Ver',
         pct10: '%10', discountTitle: 'Hoşgeldin indirimi', discountSub: 'Sadece nakit ödemede geçerli', mapsBtn: "Google Maps'te aç",
         formTitle: 'Bize Yazın', formSub: 'Soru, rezervasyon veya büyük siparişler için bize mesaj bırakın.', formName: 'Adınız', formContact: 'Telefon veya e-posta', formMsg: 'Mesajınız', formSend: 'Mesaj Gönder', formPrivacy: 'Verileriniz yalnızca talebinizin işlenmesi için kullanılır.',
       },
